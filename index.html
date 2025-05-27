@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basavaraj G. K | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-6 shadow-md">
+    <div class="container mx-auto px-6">
+      <h1 class="text-3xl font-bold">Basavaraj G. K</h1>
+      <p class="text-lg">Java Developer | Spring Boot | ReactJS Enthusiast</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="py-10 px-6 text-center">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p class="max-w-2xl mx-auto">I am a passionate Java developer with hands-on experience in Spring Boot, ReactJS, and modern web technologies. This is a simple static portfolio showcasing the technologies I use and love.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="bg-white py-10 px-6">
+    <h2 class="text-2xl font-semibold text-center mb-6">My Tech Stack</h2>
+    <div id="skills-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+      <!-- Filled by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-blue-100 py-10 px-6">
+    <h2 class="text-2xl font-semibold text-center mb-4">Contact</h2>
+    <p class="text-center">Email: basavaraj@example.com | GitHub: <a class="text-blue-700 underline" href="https://github.com/BasavarajSamrat">BasavarajSamrat</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center py-4 mt-6">
+    <p>&copy; 2025 Basavaraj G. K. All rights reserved.</p>
+  </footer>
+
+  <!-- Script to populate skills -->
+  <script>
+    const skills = [
+      "Java", "Spring Boot", "Spring", "ReactJS", "Tailwind CSS",
+      "Maven", "Docker", "Git", "IntelliJ IDEA", "MySQL", "Postman"
+    ];
+
+    const container = document.getElementById("skills-container");
+
+    skills.forEach(skill => {
+      const div = document.createElement("div");
+      div.className = "bg-gray-100 p-4 rounded-xl shadow text-center text-lg font-medium text-gray-700 hover:bg-gray-200";
+      div.textContent = skill;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
